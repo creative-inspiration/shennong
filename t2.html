@@ -1,0 +1,214 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>zhongyaozufang</title>
+    <link rel="shortcut icon" href="images/medicine.png" />
+      <!-- 引入初始化样式 -->
+     <link rel="stylesheet" href="css/base.css">
+     <!-- 引入公共样式文件 -->
+	<style>
+		body{
+		background-image:url(images/b1.jpg);
+		background-repeat:repeat-y;
+		background-position:center;
+		background-attachment:fixed; 
+		background-size: 100%;  
+		font-family: "演示秋鸿楷"  ;
+	       }
+
+/*标题部分*/
+.biaoti{
+	width:980px;
+	height:50px;
+	margin: 0 auto;
+	background: url(upload/fenge.jpg) repeat center ;
+	text-align: center;
+
+}
+h2{
+	text-align: center;
+	color:#b36d70;
+
+}
+p{
+	text-align: left;
+	 font-size: 15px;
+
+}
+
+  h1{
+      color:#900;
+      font-size: 38px;
+      text-align: center;
+     }
+  /*正文部分*/
+  .yao1,.yao2,.yao3,.yao4,.yao5
+{
+
+	width: 980px;
+	height:210px; 
+	margin:10px auto;
+	background-color:white;
+	font-size: 17px;
+	border:#b36d61 solid 1px;
+
+}
+.yao1 li,.yao2 li,.yao3 li,.yao4 li,.yao5 li
+{float: left;
+  width:450px;
+  height:210px;
+  background-color:white;
+  margin-right:10px;
+}
+#box1,#box2,#box3,#box4,#box5
+{float: left;
+  width:200px;
+  height:210px;
+  background-color:#eec469;
+  margin-left:10px;
+  color:#b36d61;
+
+}
+.m{
+
+        font-weight: bold;
+      font-family: "宋体";
+        font-size:12px;
+        text-align: center;
+        color:black;
+      }
+      .button {
+    background-color: #fad890; /* Green */
+    border: none;
+    color: #efebe1;
+    padding: 8px 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    position: absolute;
+    left: 300px;
+}
+.button1{
+     background-color: #efebe1; 
+    color: black; 
+    border: 2px solid #fad890;
+}
+.button1:hover {
+    background-color: #fad890;
+    color: white;
+}
+	</style>
+</head>
+<body>
+<!-- 标题 -->
+<input type = "button" value = "返回首页" onclick="location.href='t1.html'" class="button button1"/>
+<div class="biaoti">
+         <em> <h1 >中药组方</h1></em>
+</div>
+<!-- 药方第一行 -->
+<div class=yao1>
+    <ul>
+         <li>
+         <img src="images/cha1.jpg" width="220px" height="210px" align="left">
+         <div id="box1">
+         	 <br><p ><span ><h2>养颜祛斑茶</h2></span><br><span>组方：</span>山楂+玫瑰花+大枣<br><span>适用症状：</span>祛除斑点，改善面色苍白。
+             </p>
+         </div>
+         </li>
+         <li>
+         <img src="images/cha2.jpg" width="220px" height="210px" align="left">
+         <div id="box2">
+         	 <br><p><span><h2>强心护脉方</h2></span><br><span>组方：</span>三七粉+丹参+西洋参<br> <span>适用症状：</span>预防及改善动脉硬化及心脑血管疾病。
+         	 </p>
+         </div>
+         </li>
+    </ul>
+</div>
+<div class=yao2>
+ <ul>
+         <li>
+         <img src="images/cha3.jpg" width="220px" height="210px" align="left">
+         <div id="box1">
+         	 <br><p ><span ><h2>更年静心茶</h2></span><br><span>组方：</span>灵芝+莲子心+西洋参<br><span>适用症状：</span>改善失眠，虚汗，潮热等更年期症状。
+             </p>
+         </div>
+         </li>
+         <li>
+         <img src="images/cha4.jpg" width="220px" height="210px" align="left">
+         <div id="box2">
+         	 <br><p ><span ><h2>办公室一族茶方</h2></span><br><span>组方：</span>三七花+杭菊+枸杞子<br><span>适用症状：</span>改善脑部缺氧，增强记忆力，抗辐射。
+             </p>
+         </div>
+         </li>
+    </ul>
+</div>
+<div class=yao3>
+ <ul>
+         <li>
+         <img src="images/cha5.jpg" width="220px" height="210px" align="left">
+         <div id="box1">
+         	 <br><p ><span ><h2>夏季清心茶</h2></span><br><span>组方：</span>参须+麦冬+菊花+枸杞子<br><span>适用症状：</span>清心止渴，改善夏季烦热，皮肤夏季过敏。
+             </p>
+         </div>
+         </li>
+         <li>
+         <img src="images/cha6.jpg" width="220px" height="210px" align="left">
+         <div id="box2">
+         	 <br><p ><span ><h2>高考冲刺茶</h2></span><br><span>组方：</span>西洋参+红景天+胎菊<br><span>适用症状：</span>提高注意力，改善考试综合症。
+         	 </p>
+         </div>
+         </li>
+    </ul>
+</div>
+<div class=yao4>
+ <ul>
+         <li>
+         <img src="images/cha7.jpg" width="220px" height="210px" align="left">
+         <div id="box1">
+         	 <br><p ><span ><h2>健脾消食方</h2></span><br><span>组方：</span>茯苓+山药+薏苡仁<br><span>适用症状：</span>习惯性腹泻，面色萎黄，贫血。
+             </p>
+         </div>
+         </li>
+         <li>
+         <img src="images/cha8.jpg" width="220px" height="210px" align="left">
+         <div id="box2">
+         	 <br><p ><span ><h2>防感冒方</h2></span><br><span>组方：</span>黄芪+山药+太子参<br><span>适用症状：</span>习惯性感冒，倦怠，自汗盗汗。
+             </p>
+         </div>
+         </li>
+    </ul>
+</div>
+<div class=yao5>
+ <ul>
+         <li>
+         <img src="images/cha9.jpg" width="220px" height="210px" align="left">
+         <div id="box1">
+         	 <br><p ><span ><h2>明目方</h2></span><br><span>组方：</span>菊花+决明子+枸杞子<br><span>适用症状：</span>假性近视，用眼过度。
+             </p>
+         </div>
+         </li>
+         <li>
+         <img src="images/cha10.jpg" width="220px" height="210px" align="left">
+         <div id="box2">
+         	 <br><p ><span ><h2>降脂减肥方</h2></span><br><span>组方：</span>山楂+荷叶+决明子<br><span>适用症状：</span>高血脂，肥胖
+             </p>
+         </div>
+         </li>
+    </ul>
+</div>
+<!-- 底部导航栏 -->
+<div class="dibu">
+       <p class="m"><a href="t1.html">首页</a> | <a href="#">关于我们</a> | <a href="#">新闻资讯 </a>| <a href="#">产品展示</a> | <a href="#">培训与发展</a> | <a href="#">客户留言</a> | <a href="#">联系我们</a> </p>
+    <hr/>
+    <p class="m">Copyright © 2014-2021 www.zhongyoo.com 版权所有 中药查询 京ICP备13004469号-1
+         </p>  
+         </div>
+</body>
+</html>

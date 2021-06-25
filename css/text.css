@@ -1,0 +1,42 @@
+.text{
+    	width: 980px;
+		height:70px;
+		font-size: 34px; 
+		margin-top: 100px;
+		margin:0px auto;
+
+    }
+    .xx{
+    	position: absolute;
+    	left: 990px;
+    	top:630px;
+    	font-family: "微软雅黑";
+    	font-size: 20px;
+    	
+    }
+    #ap{
+			resize: none;
+			width: 675px;
+			height: 1000px;
+			margin:0px auto;
+			border: none;
+			background-color: transparent;
+			font-family: "楷体";
+			font-size: 20px;
+		}
+	#imgm{
+			position: absolute;
+			left: 800px;
+			top: 300px;
+
+		}
+	#imgx{
+		position: absolute;
+			left: 850px;
+			top: 650px;
+	}	
+	#imgs{
+		position: absolute;
+			left: 950px;
+			top: 575px;
+	}
