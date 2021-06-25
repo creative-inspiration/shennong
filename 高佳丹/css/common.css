@@ -1,0 +1,373 @@
+
+.header{
+	width: 980px;
+	height: 130px;
+	margin:0px auto;
+}
+.gun{
+   width: 980px;
+  height:40px;
+  font-size: 20px;
+  background-color: #ffff99;
+     
+}
+.fl{
+  width:470px;
+	float:left;
+	 margin-top:10px;
+	 margin-left: 0px;
+
+}
+ #wenzi
+{
+
+
+}
+/*搜索预登陆模块*/
+.search
+{
+  float:left;
+   margin-top:40px;
+   margin-right: 0px;
+   font-size: 14px;
+}
+.denglu{
+	float:right;
+    margin-top:30px;
+	 margin-right: 0px;
+
+}
+/*导航模块*/
+   .menu {
+    width:980px;
+   margin: 0px auto;
+   margin-top: 0px;
+    background-color: #eec469;
+    overflow: hidden;  /*清除浮动，否则会父级坍塌*/
+  }
+
+  .menu ul {
+    list-style-type: none;
+    font-size: 20px;
+  }
+
+  .menu ul li a {
+    float: left;
+    margin-right:70px;
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+  }
+
+  .menu ul li a:hover {
+    background-color: #988765;
+  }
+
+  .menu ul li a.active {
+    background-color: #988765;
+  }
+
+.w{
+	width:1200px;
+	margin:0 auto;
+}
+
+ .m{
+        font-weight: bold;
+      font-family: "宋体";
+        font-size:12px;
+        text-align: center;
+        color:black;
+ }
+ /*新闻模块*/
+.news
+{
+  width: 980px;
+  height:250px;
+  background-color: white;
+  margin:0px auto;
+}
+.pic{
+  float:left;
+  height:250px;
+  margin-top:5px;
+  border: 1px solid #C90;
+}
+.xinwen{
+  
+  width: 590px;
+  height:250px;
+  margin-top:5px;
+  border: 1px solid #C90;
+  position: relative;
+  left:390px;
+  top:5px;
+  background-color: white;
+}
+.xinwen ul{
+   list-style-type: none;
+    font-size: 20px;
+     position: absolute;
+     top:35px;
+     left:5px;
+}
+.xinwen ul li {
+    background: url(../images/tu01.gif) no-repeat left center;
+    background-size: 5px;
+    float: left;
+    width: 100%;
+    padding-left: 8px;
+    font-size: 17px;
+    line-height: 1.5em;
+}
+.gd a{
+  position: relative;
+  left:150px;
+  top:5px;
+}
+.w{
+  width:1200px;
+  margin:0 auto;
+}
+/*分割线*/
+#fenge{
+  width: 980px;
+  height:25px;
+  font-size: 18px;
+  color:#900;
+  margin:10px auto;
+  background: url(../upload/fenge.jpg) repeat center ;
+
+}
+#fenge p{
+  float: right;
+  color:#900;
+}
+
+/*中医图谱模块*/
+.tupu{
+  width: 980px;
+  height:210px; 
+  margin:10px auto;
+  background-color: #eec469;
+  text-align: center;
+
+}
+.tupu li
+{float: left;
+  width:220px;
+  height:210px;
+  background-color: white;
+  margin-right:10px;
+}
+
+
+
+#zhu{
+  width: 980px;
+  background-color: #ffffff;
+  margin:0px auto;
+}
+#biao1{
+  font-family: "微软雅黑";
+  font-size: 20px;
+  color:#cc9966;
+  font-weight: bolder;
+}
+#box1{
+  width: 200px;
+  height:480px;
+  padding:5px;
+   border: 1px solid #C90;
+}
+
+#box1 ul li{
+      float:left;
+      list-style-type: disc;   
+      padding:2px 50px 10px 2px;
+     }
+#box1 ul li a:link{
+      text-decoration: none;
+      color:#D19275;
+   
+     }
+#box1 ul li a:hover{
+     text-decoration:underline;
+     color:9933333;
+     }   
+#box4{
+
+  width:750px;
+  height:480px;
+  padding:5px;
+   border: 1px solid #C90;
+  float:right;
+}
+#box4 #biao2{
+  text-align: center;
+  font-size: 24px;
+  font-weight: bolder;
+}
+#box4 p{
+  font-size: 15px;
+}
+#box4 span{
+   color:#cc9966;
+ 
+}
+#box4   #biao3{
+  font-size: 18px; 
+  font-weight: bolder;
+}
+#box4 a{
+  font-size: 18px;
+}
+
+.m{
+
+        font-weight: bold;
+      font-family: "宋体";
+        font-size:12px;
+        text-align: center;
+        color:black;
+      }
+#main{
+     width: 980px;
+      height: 650px;
+      margin-top: 10px;
+        margin-bottom: 5px;
+      
+     }
+     #aside1{
+    width:153px; 
+    height: 650px;  
+     border: 1px solid #C90;
+      float:left;
+        margin-right: 7px;
+  }
+  /*排行榜*/
+   #aside1 .tou
+ { 
+  height:18px;
+   color:#b36d61;
+   font-size: 13px;
+   margin-bottom: 2px;
+   background: url(../upload/fenge.jpg) repeat center ;
+   font-family: "演示秋鸿楷"  ;
+ }
+#aside1 .ph
+{ float:left;
+  width:153px;
+  height:630px;
+ background: url(../images/beijing2.jpg)  no-repeat;
+ background-size: 153px 630px;
+font-size: 18px;
+
+}
+#aside1 .ph ul
+{
+ float:left;
+ margin:auto;
+ text-align: center;
+
+}
+     #content{
+      width: 550px;
+      height: 650px;  
+        float:left;
+        /*border: 1px solid #C90;*/
+        margin-right: 10px;
+         border-bottom: 1px solid #C90;
+     }
+     #aside2{
+border: 1px solid #C90;
+    width:252px; 
+    height: 650px;   
+    float:left;
+
+    
+     }
+     #aside2 .xuewei{
+      background: url(../upload/fenge.jpg) repeat center ;
+      font-size: 30px;
+      color:#b36d61;
+      font-family: "演示秋鸿楷"  ;
+     }
+     #aside2 .b1,.b2,.b3,.b4,.b5,.b6{
+      width: 250px;
+      height: 100px;
+    
+    }
+#aside2 .c1,.c2,.c3,.c4,.c5,.c6{
+      width: 140px;
+      height: 100px;
+      float:right;
+  }
+#aside2  .d1,.d2,.d3,.d4,.d5,.d6{
+      font-size: 12px;
+      color:red;
+
+}
+#zong{
+  width: 550px;
+  height: 280px;
+   border-bottom: 1px solid #C90;
+   /*border: 1px solid #C90;*/
+}
+#zong #zuo{
+  width: 50px;
+  height: 250px;
+  float:left;
+  text-align: center;
+  font-size: 24px;
+  font-family: "黑体";
+
+}
+#zong #you{
+  width: 495px;
+  height: 250px;
+  float:left;
+  position:relative;
+  
+
+}
+#zong #you ul li{
+  list-style-type: disc; 
+    font-size: 13px;
+    padding:0px 0px 10px 0px;
+}
+#zong #you ul li a:link{
+   color:#D19275; 
+}
+#zong #you ul li a:hover{
+    color:9933333;
+}
+#zong #you span{
+  position:absolute;
+  right:0;
+}
+#lianjie ul li {
+  float:left;
+      list-style-type: none;
+      font-size: 15px;
+
+}
+#lianjie ul li a{
+  padding:30px 35px 30px 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

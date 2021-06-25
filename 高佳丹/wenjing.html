@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>wenjing</title>
+	<link rel="shortcut icon" href="images/medicine.png" />
+	<!-- 引入初始化样式 -->
+	<link rel="stylesheet" href="css/base.css">
+	<!-- 引入公共样式文件 -->
+	<link rel="stylesheet" href="css/common.css">
+	<!-- 风格 -->
+	<link rel="stylesheet" href="css/nav.css">
+	<style>
+	body{
+		background-image:url(images/b1.jpg);
+		background-repeat:repeat-y;
+		background-position:center;
+		background-attachment:fixed; 
+		background-size: 100%;
+        opacity: 1;
+	}
+    .header{
+    background-image:url(images/header.png);
+	background-repeat: repeat;
+	background-position: left center;
+	background-attachment: fixed; 
+
+    }
+    .container{
+    	margin:0 auto;
+		width: 980px;
+		height: 800px;
+		background-color: white;
+    }
+    .name{
+    	width: 735px;
+     	height: 50px;
+     	font-size: 34px; 
+		margin-top: 100px;
+		margin:0px auto;
+		background-image: url(images/aside.jpg);
+     	background-repeat: repeat;
+		background-position: left center;
+		background-attachment: fixed; 
+        float:left;
+        position: relative;
+		
+    }
+    .content{
+    	width: 735px;
+     	height: 800px;
+     	font-size: 34px; 
+		margin-top: 100px;
+		margin:0px auto;
+        float:left;
+    }
+    .aside2{
+    	width:241px; 
+		height: 250px;
+		 background-image: url(images/aside.jpg);
+		float:left;
+		border: 2px dotted #965454;
+
+    }
+    .aside3{
+    	width:241px; 
+		height: 250px;
+		 background-image: url(images/aside.jpg);
+		float:left;
+		border: 2px dotted #965454;
+    }
+    .aside4{
+    	width:241px; 
+		height: 500px;
+		 background-image: url(images/aside.jpg);
+		float:left;
+		border: 2px dotted #965454;
+    }
+    .xx{
+    	position: absolute;
+    	left: 990px;
+    	top:630px;
+    	font-family: "微软雅黑";
+    	font-size: 20px;
+    	
+    }
+   .nav{
+	background-color: transparent;
+	
+	
+	}
+	.a{
+            position: absolute;
+            top: 12%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background-color: #fad890;
+            height: 40px;
+            border-radius: 40px;
+            padding: 10px;
+        }
+        .a:hover .b{
+            width: 150px;
+            padding: 0 6px;
+        }
+        .a:hover .c{
+            background-color: black;
+        }
+        .b{
+            border: none;
+            background: none;
+            /* 取消选中搜索框时的外边框 */
+            outline: none;
+            width: 0;
+            padding: 0;
+            transition: .4s;
+            line-height: 40px;
+            font-size: 20px;
+            color: grey;
+        }
+        .c{
+            color: #e94118;
+            float: right;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #2f3640;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: .4s;
+        }
+       .dropbtn {
+ 			 background-color: #fad890;
+ 			 color: white;
+ 			 padding: 16px;
+ 			 font-size: 16px;
+  			border: none;
+  			border-radius: 40px;
+  			cursor: pointer;
+		}
+		.dropdown {
+		 	position: absolute;
+  			left: 60%;
+  			top: 7%;
+ 			display: inline-block;
+}
+
+		.dropdown-content {
+ 			 display: none;
+ 			 position: absolute;
+	 		 background-color: #fad890;
+	  		min-width: 160px;
+ 			 box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  			z-index: 1;
+}
+		.dropdown-content a {
+  		color: black;
+  		padding: 12px 16px;
+ 		 text-decoration: none;
+ 		 display: block;
+
+}
+.dropdown-content a:hover {background-color: grey}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #fad890;
+}
+
+	
+    #ap{
+			resize: none;
+			width: 731px;
+			height: 1000px;
+			margin:0px auto;
+			border:none;
+			
+			font-family: "楷体";
+			font-size: 18px;
+			line-height: 1.5;
+			position: relative;
+			
+			background-image: url(images/aside.jpg);
+		background-repeat: repeat;
+		background-position: left center;
+		background-attachment: fixed;   
+		
+
+		}
+	
+	
+	
+	#imgl{
+		position: absolute;
+		left: 920px;
+		top: 35px;
+
+	}
+
+	.imgx{
+		position: absolute;
+		left: 920px;
+	}
+
+	</style>
+</head>
+<body>
+
+       <div class="header"> 
+       <!-- logo部分 -->
+             <div class="fl">
+				 <img src="images/medicine.png" height=80 px align="middle">
+		<img src="images/biaoti.png"  width=300 px height=100 px align="middle">
+
+			</div>
+			<!-- 搜索和登陆部分 -->
+			 <div class="a">
+        <input type="text" class="b">
+        <a href="" class="c">
+            <img src="images/search.png" style="width: 35px;">
+        </a>
+    	</div>
+ 
+    	<div class="dropdown">
+  			<button class="dropbtn"><img src="images/xiala.png" height="30px" width="30px"></button>
+  				<div class="dropdown-content">
+  					<a href="http://localhost/shennong/lianqiao.html">连翘</a>
+  					<a href="http://localhost/shennong/baishouwu.html">白首乌</a>
+  					<a href="http://localhost/shennong/banlangen.html">板蓝根</a>
+  					<a href="http://localhost/shennong/bailian.html">白蔹</a>
+  					<a href="http://localhost/shennong/xiangsizi.html">相思子</a>
+  					<a href="http://localhost/shennong/fufangteng.html">扶芳藤</a>
+  					<a href="http://localhost/shennong/danggui.html">当归</a>
+  					<a href="http://localhost/shennong/huangqi.html">黄芪</a>
+  					<a href="http://localhost/shennong/sanqi.html">三七</a>
+ 		 		</div>
+		</div>
+
+    		
+			<!-- 登录界面 -->
+			<div class="denglu">
+				<a href="http://localhost/shennong/index.php"><img id="imgl" src="images/login.png" height="80px" width="100px"></a>
+    	
+			</div>
+
+		</div>
+<!-- 菜单部分 -->
+<div class="menu">
+	<ul>
+			<li><a href="http://localhost/shennong/t1.html">网站首页</a></li>
+			<li><a href="http://localhost/shennong/t1.html#box1" class="active">常见中药</a></li>
+			<li><a href="http://localhost/shennong/t2.html">中药组方</a></li>
+			<li><a href="http://localhost/shennong/ziyemian.html">中药图谱</a></li>
+			<li><a href="http://localhost/shennong/index.php">我的</a></li>
+	</ul>
+</div>
+<div class="container">
+	
+	
+	<div class="content" >
+		<div class="name">
+			<h4  align="auto">&emsp;问荆</h4>
+		</div>
+		
+		<textarea id="ap" rows="30" cols="20" >
+【中药名】问荆 wenjing
+【别名】连续草，笔头菜，节节草，猪鬃草，公母草，搂接草，空心草，马蜂草，骨节草，土木贼。
+【英文名】Bottle Brush Herb。
+【药用部位】来源于木贼科植物问荆Equisetum arvense L.的地上部分。
+【植物形态】多年生草本，地上茎直立，二型。营养茎在孢子茎枯萎后长出，高15～60厘米，有棱脊6～15条，分枝轮生，叶退化，下部联合成鞘，鞘齿披针形，黑色，边缘灰白色，膜质。孢子茎早春由根茎发出，褐色，肉质，不分枝，鞘长而大。孢子囊穗顶生，孢子叶六角形，盾状着生，下生孢子囊6～8个，孢子成熟时孢子茎即枯萎。
+【产地分布】生于海拔600～2300米的田边、沟旁。分布于陕西、河北及东北、江西、安徽、贵州、四川等地。
+【采收加工】夏季割取地上部分，晒干。
+【药材性状】茎呈圆柱形，有棱脊6～16条，节上轮生小枝，小枝实心，有 棱脊3~4条，通常不再分枝或有时可再分枝；叶退化，下部联合成鞘，鞘齿披针形，黑色，边缘灰白色，膜质。生孢子囊穗的茎，早春生出，无叶绿素，棕褐色，顶端生有长圆形的孢子囊穗，有总梗，钝头，黑色。孢子叶六角形，盾状着生，螺丝排列，边缘着生长形孢子囊。
+【性味归经】性平，味苦。归肺经、胃经、肝经。
+【功效与作用】清热，凉血，止咳，利尿。属清热药下属分类的清热凉血药。
+【临床应用】用量5~15克，水煎服。主治鼻衄、月经过多、肠出血、咯血、外痔出血以及咳嗽气喘、小便不利、水肿、淋病等。
+【药理研究】药理实验研究表明，问荆有保肝作用，降血脂作用，利尿作用，降压作用，抗炎、镇痛作用及对中枢神经系统有抑制作用。
+【化学成分】全草皂苷、黄酮类、三萜及甾体类、生物碱及大量硅酸、β-谷甾醇、维生素C和胡萝卜素等。
+【使用禁忌】尚不明确，谨慎用药。
+【配伍药方】
+①治热淋，小便不利：问荆12克，大石韦12克，海金砂藤12克。水煎服。(《四川中药志》1982年版)
+②治火眼生翳：问荆、菊花各15克，蝉衣6克。煎服。（《安徽中草药》）
+③治鼻衄：问荆30克，早莲草30克。水煎服。(《四川中药志》1982年版)
+④治咳嗽气急：问荆6克，地骷髅21克。水煎服。（《中医药实验研究》）
+⑤治崩漏：问荆30克，马齿苋30克。水煎服。(《四川中药志》1982年版)
+		</textarea>
+	</div>
+	<div class="aside2">
+		<img src="medcine imgs/wenjing.png" width="242px" height="252px">
+		
+	</div>
+	<div class="aside3">
+		<h1>&emsp;点击小神农购买</h1>
+		<a href="https://item.jd.com/44008182667.html">
+			<div class="imgx">
+			<img  src="images/jixiangwu.png" width="150px" height="215px">
+			</div>
+		</a>
+	</div>
+	<div class="aside4">
+		<nav>
+	<div class="nav">
+		<p class="nav-font" style="color:grey">&emsp;&emsp;热门药材推荐</p>
+		<ul>
+	 		<li><a href="http://localhost/shennong/wenjing.html">
+	 		&emsp;&emsp;问&emsp;&emsp;荆&emsp;&emsp;&emsp;</a></li>
+	 		<li><a href="http://localhost/shennong/sanqi.html">
+	 		&emsp;&emsp;三&emsp;&emsp;七&emsp;&emsp;&emsp;</a></li>
+	 		<li><a href="http://localhost/shennong/lianqiao.html">
+	 		&emsp;&emsp;连&emsp;&emsp;翘&emsp;&emsp;&emsp;</a></li>
+	 		<li><a href="http://localhost/shennong/gancao.html">
+	 		&emsp;&emsp;甘&emsp;&emsp;草&emsp;&emsp;&emsp;</a></li>
+	 		<li><a href="http://localhost/shennong/danggui.html">
+	 		&emsp;&emsp;当&emsp;&emsp;归&emsp;&emsp;&emsp;</a></li>
+	 		<li><a href="http://localhost/shennong/renshen.html">
+	 		&emsp;&emsp;人&emsp;&emsp;参&emsp;&emsp;&emsp;</a></li>
+	 		<li><a href="http://localhost/shennong/baishouwu.html">
+	 		&emsp;&ensp;白&emsp;首&emsp;乌&emsp;&emsp;&ensp;</a></li>
+			<li><a href="http://localhost/shennong/xiangsizi.html">
+			&emsp;&ensp;相&emsp;思&emsp;子&emsp;&emsp;&ensp;</a></li>
+			<li><a href="http://localhost/shennong/longxianxiang.html">
+			&emsp;&ensp;龙&emsp;涎&emsp;香&emsp;&emsp;&ensp;</a></li>
+			<li><a href="http://localhost/shennong/banlangen.html">
+			&emsp;&ensp;板&emsp;蓝&emsp;根&emsp;&emsp;&ensp;</a></li>
+		</ul>
+	</div>
+</nav>
+	</div>
+</div>
+
+
+</body>
+</html>
