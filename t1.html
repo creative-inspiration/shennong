@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>神农中药网</title>
+	<link rel="shortcut icon" href="images/medicine.png" />
+	<!-- 引入初始化样式 -->
+	<link rel="stylesheet" href="css/base.css">
+	<!-- 引入公共样式文件 -->
+	<link rel="stylesheet" href="css/common.css">
+	<!-- 风格 -->
+	<style>
+	body{
+		background-image:url(images/b1.jpg);
+		background-repeat:repeat-y;
+		background-position:center;
+		background-attachment:fixed; 
+		background-size: 100%;
+       
+	}
+
+	#zhu #box4{
+		background-image:url(images/t7.jpg);
+		background-repeat:no-repeat;
+		background-position:130% 0%;
+		background-attachment:scroll; 
+		background-size: 450px 450px;
+	}
+	#zhu #box1{
+		background-image:url(images/jixiangwu.png);
+		background-repeat:no-repeat;
+		background-position:100% 80%;
+		background-attachment:scroll; 
+		background-size: 100px 200px;
+
+	}
+    #zong #zuo{
+    	background-image: url(images/bg1.gif);
+    	background-size: 50px 250px;
+
+    }
+	
+	
+    .header{
+    background-image:url(images/header.png);
+	background-repeat: repeat;
+	background-position: left center;
+	background-attachment: fixed; 
+
+    }
+     h3 {
+    font-size: 24px;
+    border-bottom: 1px dashed #900;
+    width: 380px;
+    position: absolute;
+    color:#900;
+    left:55px;
+}
+h4{
+	font-size: 18px;
+    border-bottom: 1px dashed #900;
+    width: 380px;
+    color:#900;
+   float:left;
+}
+.a{
+            position: absolute;
+            top: 12%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background-color: #fad890;
+            height: 40px;
+            border-radius: 40px;
+            padding: 10px;
+        }
+        .a:hover .b{
+            width: 150px;
+            padding: 0 6px;
+        }
+        .a:hover .c{
+            background-color: black;
+        }
+        .b{
+            border: none;
+            background: none;
+            /* 取消选中搜索框时的外边框 */
+            outline: none;
+            width: 0;
+            padding: 0;
+            transition: .4s;
+            line-height: 40px;
+            font-size: 20px;
+            color: grey;
+        }
+        .c{
+            color: #e94118;
+            float: right;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #2f3640;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: .4s;
+        }
+       .dropbtn {
+       background-color: #fad890;
+       color: white;
+       padding: 16px;
+       font-size: 16px;
+        border: none;
+        border-radius: 40px;
+        cursor: pointer;
+    }
+    .dropdown {
+      position: absolute;
+        left: 60%;
+        top: 7%;
+      display: inline-block;
+}
+
+    .dropdown-content {
+       display: none;
+       position: absolute;
+       background-color: #fad890;
+        min-width: 160px;
+       box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+}
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+     text-decoration: none;
+     display: block;
+
+}
+.dropdown-content a:hover {background-color: grey}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #fad890;
+}
+#imgl{
+    position: absolute;
+    left: 920px;
+    top: 35px;
+
+  }
+	</style>
+</head>
+<body>
+   <div id="zhu"> 
+
+
+    
+       <div class="header"> 
+            <div class="fl">
+         <img src="images/medicine.png" height=80 px align="middle">
+    <img src="images/biaoti.png"  width=300 px height=100 px align="middle">
+
+      </div>
+      <!-- 搜索和登陆部分 -->
+       <div class="a">
+        <input type="text" class="b">
+        <a href="" class="c">
+            <img src="images/search.png" style="width: 35px;">
+        </a>
+      </div>
+ 
+      <div class="dropdown">
+        <button class="dropbtn"><img src="images/xiala.png" height="30px" width="30px"></button>
+          <div class="dropdown-content">
+            <a href="http://localhost/shennong/lianqiao.html">连翘</a>
+            <a href="http://localhost/shennong/baishouwu.html">白首乌</a>
+            <a href="http://localhost/shennong/banlangen.html">板蓝根</a>
+            <a href="http://localhost/shennong/bailian.html">白蔹</a>
+            <a href="http://localhost/shennong/xiangsizi.html">相思子</a>
+            <a href="http://localhost/shennong/fufangteng.html">扶芳藤</a>
+            <a href="http://localhost/shennong/danggui.html">当归</a>
+            <a href="http://localhost/shennong/huangqi.html">黄芪</a>
+            <a href="http://localhost/shennong/sanqi.html">三七</a>
+        </div>
+    </div>
+
+        
+      <!-- 登录界面 -->
+      <div class="denglu">
+        <a href="http://localhost/shennong/index.php"><img id="imgl" src="images/login.png" height="80px" width="100px"></a>
+      
+      
+      </div>
+
+		</div>
+<!-- 菜单部分 -->
+<div class="menu">
+	<ul>
+			<li><a href="#" class="active">网站首页</a></li>
+			<li><a href="#box1">常见中药</a></li>
+			<li><a href="#box4">中药组方</a></li>
+			<li><a href="#fenge">中药图谱</a></li>
+			<li><a href="http://localhost/shennong/index.php">我的</a></li>
+	</ul>
+</div>
+<div class="news">
+            <img  class="pic" src="images/zhongyao.jpg">
+   <div class="xinwen">
+   <h3>相关新闻</h3>
+    <div class="gd"><a href="https://search.sina.com.cn/?q=%E4%B8%AD%E8%8D%AF&c=news&from=channel&ie=utf-8">更多>></a></div>
+     <ul>
+			<li  ><a href="https://k.sina.com.cn/article_7453033328_1bc3c437000100sz4a.html">这东西，俗称苦参，却少有人懂....</a></li>
+			<li  ><a href="https://cj.sina.com.cn/articles/view/1726918143/66eeadff0200161z2">鼻尖上的中药味</a></li>
+			<li  ><a href="https://k.sina.com.cn/article_3177640383_bd66f1bf01900wnvc.html">关于银杏的古老传说</a></li>
+			<li  ><a href="https://k.sina.com.cn/article_2308941133_899fa54d02000v4b6.html">中药的常见使用误区</a></li>
+		    <li  ><a href="https://k.sina.com.cn/article_7514122600_1bfe06968001012aha.html">农村常见的两种野草，既是凉茶，又是中药材...</a></li>
+			<li  ><a href="https://k.sina.com.cn/article_1664221137_6331ffd102000wa8y.html">上游•夜雨丨海清涓：中药馨香</a></li>
+			<li  ><a href="https://k.sina.com.cn/article_2972121061_b126f7e5020012wwk.html">茶本中药的起源</a></li>
+			<li  ><a href="https://k.sina.com.cn/article_6346950117_17a4ec5e501900tiqc.html">常用中药药用知识一览表</a></li>
+	</ul>
+ </div>
+</div>
+<!-- ------------------------ -->
+<!-- 图片展示 -->
+<div id="fenge"><em><ins>中药图谱</ins></em><p><a href="ziyemian.html">更多>></a></p></div>
+<div class="tupu">
+<ul>
+	<li ><a href="http://localhost/shennong/fufangteng.html"><img src="images/yao1.jpg" width="220px" height="180px"><ins>扶芳藤</ins></a></li>
+	<li><a href="http://localhost/shennong/banlangen.html"><img src="images/yao2.jpg" width="220px" height="180px"><ins>板蓝根</ins></a></li>
+	<li><a href="http://localhost/shennong/lianqiao.html"><img src="images/yao3.jpg" width="220px" height="180px"><ins>连翘</ins></a></li>
+	<li><a href="http://localhost/shennong/baishouwu.html"><img src="images/yao4.jpg" width="220px" height="180px"><ins>白首乌</ins></a></li>
+	</ul>
+</div>
+  
+       <div id="box4">
+
+        	<p id="biao2"> 常用中药小组方
+</p>
+          <p ><span id="biao3">养颜祛斑茶</span><br><span>组方：</span>山楂+玫瑰花+大枣<br><span>适用症状：</span>祛除斑点，改善面色苍白。
+          </p>
+          <br>
+          <p><span  id="biao3">强心护脉方</span><br><span>组方：</span>三七粉+丹参+西洋参<br> <span>适用症状：</span>预防及改善动脉硬化及心脑血管疾病。</p>
+          <br>
+          
+          <p><span  id="biao3">更年静心茶</span><br><span>组方：</span>灵芝+莲子心+西洋参<br><span>适用症状：</span>改善失眠，虚汗，潮热等更年期症状。</p>
+          <br>
+          
+          <p><span  id="biao3">办公室一族茶方</span><br><span>组方：</span>三七花+杭菊+枸杞子<br><span>适用症状：</span>改善脑部缺氧，增强记忆力，眼睛干涩，抗辐射。</p>
+          <br>
+          
+          <p><span  id="biao3">夏季清心茶</span><br><span>组方：</span>参须+麦冬+菊花+枸杞子<br><span>适用症状：</span>清心止渴，改善夏季烦热，皮肤夏季过敏。</p>
+          <a href="t2.html">更多>></a> 
+        </div>  
+
+     	<div id="box1">
+     		<p id="biao1">常见中药</p>
+     		<ul >
+     			<li><a href="http://localhost/shennong/wenjing.html">问荆</a></li>
+     			<li><a href="http://localhost/shennong/gancao.html">甘草</a></li>
+     			<li><a href="http://localhost/shennong/huangteng.html">黄藤</a></li>
+     			<li><a href="http://localhost/shennong/danggui.html">当归</a></li>
+     			<li><a href="http://localhost/shennong/huangqi.html">黄芪</a></li>
+     			<li><a href="http://localhost/shennong/sanqi.html">三七</a></li>
+     			<li><a href="http://localhost/shennong/dangshen.html">党参</a></li>
+     			<li><a href="http://localhost/shennong/renshen.html">人参</a></li>
+     			<li><a href="http://localhost/shennong/lianqiao.html">连翘</a></li>
+     			<li><a href="http://localhost/shennong/bailian.html">白蔹</a></li>
+     			<li><a href="http://localhost/shennong/maidong.html">麦冬</a></li>
+     			<li><a href="http://localhost/shennong/jimuye.html">檵木叶</a></li>
+     			<li><a href="http://localhost/shennong/longxianxiang.html">龙涎香</a></li>
+     			<li><a href="http://localhost/shennong/xiangsizi.html">相思子</a></li>
+     			<li><a href="http://localhost/shennong/jinqiancao.html">金钱草</a></li>
+     			<li><a href="http://localhost/shennong/fufangteng.html">扶芳藤</a></li>
+     			<li><a href="http://localhost/shennong/banlangen.html">板蓝根</a></li>
+     			<li><a href="http://localhost/shennong/baishouwu.html">白首乌</a></li>
+     			<li><a href="http://localhost/shennong/dongchongxiacao.html">冬虫夏草</a></li>
+     			<li><a href="http://localhost/shennong/tiepishihu.html">铁皮石斛</a></li>
+
+     		</ul>
+
+     	</div>    
+<div id="main">
+   <div id="aside1">
+        <div class="tou"><strong>最受关注的中药</strong></div>
+          <div class="ph">
+    <table>
+        <tr><span><img src="images/1.png" height="25px"width="25px">&nbsp;<a href="http://localhost/shennong/lianqiao.html" >连翘</a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img src="images/shang.png" height="7px"></span></tr>
+        <li><span><img src="images/2.png" height="25px"width="25px">&nbsp;<a href="http://localhost/shennong/danggui.html" >当归</a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<img src="images/ping.png" height="7px"></span></li>
+        <li><span><img src="images/3.png" height="25px"width="25px">&nbsp;<a href="http://localhost/shennong/huangteng.html" >黄藤</a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img src="images/xia.png" height="8px"></span></li>
+        <li><span><img src="images/4.png" height="25px"width="25px">&nbsp;<a href="http://localhost/shennong/xiangsizi.html" >相思子</a>&nbsp; &nbsp; &nbsp; &nbsp; <img src="images/shang.png" height="7px"></span></li>
+        <li><span><img src="images/5.png" height="25px"width="25px">&nbsp;<a href="http://localhost/shennong/longxianxiang.html" >龙涎香</a>&nbsp; &nbsp; &nbsp; &nbsp; <img src="images/shang.png" height="7px"></span></li>
+         <li><span><img src="images/6.png" height="25px"width="25px">&nbsp;<a href="http://localhost/shennong/gancao.html" >甘草</a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<img src="images/xia.png" height="8px"></span></li>
+         <li><span><img src="images/7.png" height="25px"width="25px">&nbsp;<a href="http://localhost/shennong/baishouwu.html" >白首乌</a>&nbsp; &nbsp; &nbsp; &nbsp;<img src="images/xia.png" height="8px"></span></li>
+         <li><span><img src="images/8.png" height="25px"width="25px">&nbsp;<a href="http://localhost/shennong/banlangen.html" >板蓝根</a>&nbsp; &nbsp; &nbsp; &nbsp;<img src="images/shang.png" height="7px"></span></li>
+        <li><span><img src="images/9.png" height="25px"width="25px">&nbsp;<a href="http://localhost/shennong/wenjing.html" >问荆</a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img src="images/ping.png" height="7px"></span></li>    
+  </table>
+          </div>
+        </div>
+
+  <div id="content">
+            <img src="images/t1.jpg" width="550px" height="250"alt="">
+    <div id="zong">
+     <div id="zuo"><br>中<br>药<br>知<br>识</div>
+    <div id="you">
+    	 <ul>
+    	 <br>
+        <li><a href='http://www.zhongyoo.com/jianding/3172.html' >秦皮的鉴别方法</a><span>2015-07-04</span></li>
+        
+
+        <li><a href='http://www.zhongyoo.com/wenda/3672.html' >老是长痱子，要怎么治？</a><span>2015-08-24</span></li>
+        <li><a href='http://www.zhongyoo.com/wenda/5628.html'>为什么常叩齿可以延年益寿</a><span>2016-04-07</span></li>
+
+        <li><a href='http://www.zhongyoo.com/paozhi/3720.html' >山茱萸炮制方法与标准</a><span>2018-11-12</span></li>
+        <li><a href='https://www.daquan.com/meirong/17.html' >中药美容为什么被称为“绿色美容”</a><span>2018-11-12</span></li>
+
+        <li><a href='http://www.cntcm.com.cn/2015-04/03/content_1967.htm'>中医正骨疗法</a><span>2018-07-31</span></li>
+        <li><a href='http://www.zhongyoo.com/meirong/2865.html' >丁香的美容功效及方法</a><span>2015-06-18</span></li>
+        <li><a href='http://www.pharmnet.com.cn/tcm/knowledge/detail/127653.html'>十二经脉名称分类及人体分布规律表</a><span>2018-07-18</span></li>
+      </ul>
+    </div>   
+    </div>
+    <br>
+  <img src="images/previousP.png" width="38px" alt="">
+  <img src="images/f1.jpeg" width="90px" height="76px" alt="">
+  <img src="images/f2.jpeg"  width="90px" height="76px" alt="">
+  <img src="images/f3.jpeg" width="90px" height="76px" alt="">
+  <img src="images/f4.jpeg" width="90px" height="76px" alt="">
+  <img src="images/f5.jpeg" width="90px" height="76px" alt="">
+  <img src="images/nextP.png" width="38px" alt="">
+   <div id="lianjie">
+	    <ul>
+		<li><a href="http://www.cnkang.com/tags/2606.html">菊花</a></li>
+		<li><a href="http://www.cnkang.com/tags/2603.html">薄荷</a></li>
+		<li><a href="http://www.cnkang.com/tags/4802.html">蔓荆子 </a></li>  
+		<li><a href="http://www.cnkang.com/tags/14990.html">红藤</a></li>
+		<li><a href="http://www.cnkang.com/tags/4879.html">芦荟</a></li>
+	    </ul>
+	</div>
+ </div>
+  <div id="aside2">
+            <div class="xuewei">针灸穴位</div>
+                <div class="b1">
+                 <img src="images/x1.jpg"  width="100px" height="100px" alt="">
+
+                 <div class="c1"><br><p class="d1">阳溪</p><br> 臑俞穴，在臂内收，腋后纹头直上...</div>
+                </div>
+               <div class="b2">
+                <img src="images/x2.jpg"  width="100px" height="100px" alt="">
+                <div class="c2"><br><p class="d2">足窍阴</p><br>足窍阴穴，在足第4趾末节外侧，...</div>
+     
+                </div>
+                 <div class="b3">
+                  <img src="images/x3.jpg" width="100px" height="100px" alt="">
+                  <div class="c3"><br><p class="d3">中庭</p><br>中庭穴，在胸部，当前正中线上，...</div>
+     
+                </div>
+                 <div class="b4">
+                  <img src="images/x4.jpg"  width="100px" height="100px" alt="">
+                  <div class="c4"><br><p class="d4">中枢</p><br>中枢穴，在背部，当后正中线上，...</div>
+     
+                </div>
+                 <div class="b5">
+                  <img src="images/x5.jpg"  width="100px" height="100px" alt="">
+                  <div class="c5"><br><p class="d5">膈关</p><br>膈关穴，在背部，当第7胸椎棘突...</div>
+     
+                </div>
+                 <div class="b6">
+                  <img src="images/x6.jpg"  width="100px" height="100px" alt="">
+                  <div class="c6"><br><p class="d6">关元</p><br>关元穴，在下腹部，前正中线上，...</div>
+     
+                </div>
+                </div>
+</div>
+    <br>
+    <br>
+      <p class="m"><a href="#">首页</a>|<a href="#">关于我们</a>|<a href="#">新闻资讯 </a>|<a href="#">产品展示</a> | <a href="#">培训与发展</a>|<a href="#">客户留言</a> | <a href="#">联系我们</a> </p>
+	  <hr/>
+	  <p class="m">Copyright © 2014-2021 www.zhongyoo.com 版权所有 中药查询 京ICP备13004469号-1
+      </p>
+
+
+
+
+
+     </div>
+
+   
+       
+</body>
+</html>

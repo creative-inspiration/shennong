@@ -1,0 +1,66 @@
+.biaoti{
+	width:980px;
+	height:50px;
+	margin: 0 auto;
+	background: url(../upload/fenge.jpg) repeat center ;
+	text-align: center;
+
+}
+.tupu1,.tupu2,.tupu3,.tupu4,.tupu5
+{
+
+	width: 980px;
+	height:210px; 
+	margin:10px auto;
+	background-color: #eec469;
+	text-align: center;
+	font-size: 15px;
+
+}
+.tupu1 li
+{float: left;
+  width:220px;
+  height:210px;
+  background-color: white;
+  margin-right:10px;
+}
+.tupu2 li
+{float: left;
+  width:220px;
+  height:210px;
+  background-color: white;
+  margin-right:10px;
+}
+.tupu3 li
+{float: left;
+  width:220px;
+  height:210px;
+  background-color: white;
+  margin-right:10px;
+}
+.tupu4 li
+{float: left;
+  width:220px;
+  height:210px;
+  background-color: white;
+  margin-right:10px;
+}
+.tupu5 li
+{float: left;
+  width:220px;
+  height:210px;
+  background-color: white;
+  margin-right:10px;
+}
+.dibu
+{  width:980px;
+  margin: 0 auto;
+}
+.m{
+
+        font-weight: bold;
+      font-family: "宋体";
+        font-size:12px;
+        text-align: center;
+        color:black;
+      }

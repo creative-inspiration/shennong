@@ -1,0 +1,35 @@
+.nav-font{
+    font-size: 24px;
+}
+.nav {
+  position: absolute;
+  left: 865px;
+  top: 710px;
+  background-color: #eec469;
+  overflow: hidden;  /*清除浮动，否则会父级坍塌*/
+}
+.nav ul {
+  width:230px;
+
+}
+.nav li{
+  height:40px;
+  line-height: 40px;
+  font-size: 18px;
+  text-align: middle;
+  
+  list-style-type: none;
+  list-style-position: inside;
+}
+.nav ul li a{
+  float: relative;
+  padding: 5px;
+  font-family: "微软雅黑";
+  text-decoration: none;
+}
+.nav ul li a:hover {
+  background-color: #988765;
+}
+.nav ul li a.active {
+  background-color: #988765;
+}
